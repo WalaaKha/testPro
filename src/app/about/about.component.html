@@ -1,0 +1,29 @@
+<p>
+  about works!
+</p>
+
+<ul>
+  <li *ngFor='let x of dataCollection; first as first; last as last;'><p [style.color]="first || last?'pink':'blue'" >{{x.id}} - {{x.name}} {{x.price}}</p></li>
+</ul>
+
+
+{{ number>10 ?'im greater than 10' : 'im less than'}}
+
+{{isActive?'im active' : 'in active'}}
+
+<button (click) = 'btnClick()'> chang active </button>
+
+
+<input (keyup.enter) ='printValue($event)' />
+
+<input (keyup.control.m) = 'ctrlMClicked()' />
+
+<h1 [class.redColor]="isActive"  [class.greenColor]="!isActive"> 
+  i'm red 
+</h1>
+
+<h1 [class.redColor]="number" > 
+    i'm red {{number}}
+  </h1>
+
+<h1 > i'm green </h1>

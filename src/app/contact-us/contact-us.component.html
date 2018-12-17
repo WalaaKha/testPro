@@ -1,0 +1,7 @@
+<p>
+  contact-us works!
+</p>
+
+<ul>
+  <p *ngFor='let x of dataCollection; first as first; last as last;'><li *ngIf="first">{{x.id}} - {{x.name}} {{x.price}}</li></p>
+</ul>
